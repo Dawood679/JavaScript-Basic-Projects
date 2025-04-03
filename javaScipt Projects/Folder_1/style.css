@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+
+}
+
+body {
+    background: #000;
+}
+
+.card {
+    width: 90%;
+    max-width: 455px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: white;
+    margin: 65px auto 0px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 10px;
+
+
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.items input {
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    text-align: start;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    text-align: start;
+    padding: 10px 20px;
+    margin-right: 10px;
+    flex: 1;
+    color: #555;
+
+
+}
+
+.items button {
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background: #ebfffc;
+    width: 45px;
+    height: 45px;
+}
+
+.items button img {
+    width: 16px;
+}
+
+.wether-icons h1 {
+    font-size: 80px;
+}
+
+.wether-icons h2 {
+    font-size: 50px;
+}
+
+
+.detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 40px;
+  
+}
+.detail{
+    margin: 20px;
+}
+
+.humadity {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 10px;
+
+}
+
+.humadity img {
+    width: 40px;
+
+}
+.humadity1 img {
+    width: 40px;
+
+}
+
+
+.humadity5 {
+    /* width: 100%; */
+    text-align: center;
+}
+
+.wind-speed {
+    text-align: center;
+}
+
+.windspeed {
+    font-size: 30px;
+    margin-top: -5px;
+}
+.temp{
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.humadity1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.humadityno{
+    font-size: 15px;
+}
+.windspeed{
+    font-size: 15px;
+}
+.another{
+    display: none;
+}
+.mytype{
+    font-size: 15px;
+    color: white;
+    display: none;
+    margin-top: 10px;
+    text-align: start;
+}

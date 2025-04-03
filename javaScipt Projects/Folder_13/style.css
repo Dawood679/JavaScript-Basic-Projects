@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+        --primary:indianred;
+        --secondary:rgba(15,10,29,0.849);
+        --light: #2f3640;   
+}
+
+.nav1{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    flex: wrap;
+    align-items: center;
+    box-shadow: 2px 0px 3px grey;
+
+}
+.nav1 .left{
+    flex-basis: 50%;
+    letter-spacing: 2px;
+}
+.left a{
+    text-decoration: none;
+    color: var(--primary);
+    margin: 0px 5px;
+    font-weight: bold;
+}
+
+.right i{
+    font-size: 20px;
+    margin: 0 15px;
+    background: var(--primary);
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.6s ease-in-out;
+}
+
+.right i:hover{
+    transform: rotate(360deg);
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex: wrap;
+    height: 120px;
+    margin-left: -100px;
+    
+}
+.nav2-left i{
+    letter-spacing: 10px;
+    padding-left: 10px;
+}
+.nav2-right i{
+    letter-spacing: 10px;
+    padding-left: 10px;
+}
+.nav2-center h2{
+    color: var(--primary);
+    letter-spacing: 2px;
+}
+.nav2-center span{
+    color: #383838;
+    
+}
+.nav2-right, .nav2-center ,.nav2-left{
+    cursor: pointer;
+}
+.nav2-center p{
+    text-align: center;
+    font-weight: 300;
+}
+.nav3 ul{
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+.nav3 ul{
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+.nav3 ul li{
+    color: black;
+    position: relative;
+    z-index: 99;
+}
+.nav3 ul li a{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+.nav3 ul li i{
+    color: var(--primary);
+    margin: 0px 10px;
+}
+.nav3 ul li a:hover{
+    color: var(--primary);
+}
+#nav3secondul{
+    position: absolute;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    background-color: #fff;
+    text-align: center;
+   
+    
+    
+}
+#nav3secondul li{
+    border-bottom: 1px solid var(--primary);
+    padding: auto;
+    text-align: center;  
+    
+}
+#nav3secondul li a{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.nav3 ul li:hover>#nav3secondul{
+    display: block;
+}
+
+.featured{
+    width: 100%;
+    height: 70vh;
+    background:linear-gradient(to right,rgba(0,0,0,0.9) 20%,rgba(255,255,255,0.2) ),
+         url("R-ecom/g1.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    margin-top: 15px;
+}
+.featured_text{
+    max-width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.featured_text h2{
+    font-family: "Akaya Kanadaka",cursive;
+    font-weight: 400;
+
+}
+.featured_text button{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: var(--secondary);
+    margin: 20px 0px;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+.featured_text button:hover{
+    background-color: var(--primary);
+
+}
+.latest{
+    padding: 50px 100px;
+}
+.product_intro h2{
+    color: var(--primary);
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    
+}
+.product_intro span{
+    color: var(--secondary);
+}
+.product_intro p{
+    text-align: center;
+    margin: 20px 0;
+    color: grey;
+}
+.card-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin: 4rem 0;
+}
+.card-container .cards{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+}
+.cards img{
+    width: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+.cards i{
+    color: goldenrod;
+}
+.cards button{
+    border: none;
+    background-color: var(--secondary);
+    outline: none;
+    margin-top: 10px;
+    padding: 5px  20px;
+    color: white;
+    cursor: pointer;
+
+}
+.cards:hover img, .cards:hover h2{
+    width: 80%;
+    color: var(--primary);
+}
+.cards:before{
+    content: "20% off";
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primary);
+    padding: 0 4px;
+    transform: rotate(-20deg);
+}
+.trend{
+    padding: 50px 100px;
+    background-color: rgba(0,0,0,0.01);
+}
+
+
+.trend .swiper {
+    width: 100%;
+    padding: 50px;
+}
+
+.trend .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.trend .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary);
+    color: white;
+    padding: 50px 100px;
+    flex: wrap;
+    text-align: center;
+}
+footer h1{
+    color: var(--primary);
+
+}
+footer h1 span{
+    color: black;
+}
+
+footer div i{
+    
+    margin: 0 8px;
+    transition: 0.2s ease-in-out;
+}
+footer div{
+    flex-basis: 30%;
+}
+footer div i:hover{
+    transform: scale(1.5);
+    color: var(--primary);
+}
+
+@media only screen and (max-width:769px) {
+    .right i{
+        font-size: 15px;
+        margin: 0 5px;
+        
+    }
+
+
+
+  
+    
+    .nav2-left {
+        font-size:8px;
+        transform: translate(100px,0px);
+    }
+
+    .nav2-right i{
+        letter-spacing: 10px;
+        /* padding-left: 50px; */
+    }
+    .nav2-center h2{
+        color: var(--primary);
+        transform: translate(100px,0);
+        font-size: 20px;
+        font-size: 15px;
+
+        
+    }
+    .nav2-left{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav2-center p{
+        font-size: 10px;
+        transform: translate(100px,0px);
+    }
+    .nav2-center span{
+        color: #383838;
+        
+        
+    }
+    .nav2-right{
+        transform: translate(100px,0px);
+    }
+    
+    
+    
+    .latest{
+        padding: 10px 0px;
+    }
+    .product_intro h2{
+        color: var(--primary);
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+    .product_intro span{
+        color: var(--secondary);
+    }
+    .product_intro p{
+        text-align: center;
+        margin: 20px 0;
+        color: grey;
+    }
+    .card-container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        margin: 4rem 0;
+    }
+    .card-container .cards{
+        flex-basis: 20%;
+        padding: 0.8rem;
+        position: relative;
+    }
+    .cards img{
+        width: 100%;
+        transition: 0.2s ease-in-out;
+    }
+    
+    .cards i{
+        color: goldenrod;
+    }
+    .cards button{
+        border: none;
+        background-color: var(--secondary);
+        outline: none;
+        margin-top: 10px;
+        padding: 5px  20px;
+        color: white;
+        cursor: pointer;
+    
+    }
+    .cards:hover img, .cards:hover h2{
+        width: 80%;
+        color: var(--primary);
+    }
+    .cards:before{
+        content: "20% off";
+        width: 25%;
+        height: 25px;
+        line-height: 25px;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: var(--primary);
+        padding: 0 4px;
+        transform: rotate(-20deg);
+    }
+    
+
+    .trend{
+        padding: 50px 100px;
+        background-color: rgba(0,0,0,0.01);
+    }
+    
+    
+    .trend .swiper {
+        width: 100%;
+        padding: 50px;
+    }
+    
+    .trend .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 260px;
+        height: 260px;
+    }
+    
+    .trend .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary);
+        color: white;
+        padding: 20px 30px;
+        flex: wrap;
+        text-align: center;
+    }
+    footer h1{
+        color: var(--primary);
+        font-size: 15px;
+    
+    }
+    footer h1 span{
+        color: black;
+    }
+    
+    footer div i{
+        
+        margin: 0 8px;
+        transition: 0.2s ease-in-out;
+    }
+    footer div{
+        flex-basis: 30%;
+        font-size: 15px;
+        
+    }
+    footer p{
+        font-size: 10px;
+    }
+    footer div i:hover{
+        transform: scale(1.5);
+        color: var(--primary);
+    }
+}

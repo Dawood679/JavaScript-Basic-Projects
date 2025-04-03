@@ -1,0 +1,31 @@
+.container{
+
+}
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+button{
+    padding: 11px;
+    border: none;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: 800;
+    
+}
+.reset {
+    /* padding-left: 5px; */
+    width: 5rem;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.new-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
